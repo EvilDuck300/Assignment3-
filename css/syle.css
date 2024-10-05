@@ -1,31 +1,56 @@
-/* Dropdown menu styles */
-nav ul {
-    list-style: none;
-    padding: 0;
+/* Navbar styles */
+nav {
+    background-color: #333; /* Dark background for the navbar */
+    padding: 10px 20px; /* Padding around the navbar */
+  }
+  
+  nav ul {
+    list-style-type: none; /* Remove bullet points from the list */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    display: flex; /* Use flexbox for horizontal layout */
   }
   
   nav ul li {
-    display: inline-block;
-    position: relative;
+    position: relative; /* Required for dropdown positioning */
   }
   
-  nav ul li ul.dropdown {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    background-color: #4CAF50;
-    padding: 10px;
-    list-style-type: none;
+  nav ul li a {
+    color: white; /* Text color */
+    padding: 15px 20px; /* Padding around links */
+    text-decoration: none; /* Remove underline from links */
+    display: block; /* Make the link fill the list item */
   }
   
-  nav ul li:hover ul.dropdown {
-    display: block;
+  nav ul li a:hover {
+    background-color: #575757; /* Change background on hover */
   }
   
-  nav ul li ul.dropdown li {
-    display: block;
+  /* Dropdown styles */
+  .dropdown {
+    display: none; /* Hide dropdown by default */
+    position: absolute; /* Position it below the parent */
+    background-color: #333; /* Same background as navbar */
+    min-width: 160px; /* Minimum width for dropdown */
+    z-index: 1; /* Ensure dropdown is above other content */
   }
+  
+  nav ul li:hover .dropdown {
+    display: block; /* Show dropdown on hover */
+  }
+  
+  .dropdown li {
+    display: block; /* Stack dropdown items vertically */
+  }
+  
+  .dropdown li a {
+    padding: 10px; /* Padding for dropdown links */
+  }
+  
+  .dropdown li a:hover {
+    background-color: #575757; /* Change background on hover */
+  }
+  
   
   /* Slideshow styles */
 .slideshow {
