@@ -1,14 +1,32 @@
-/* Navbar styles */
-nav {
-    background-color: #333; /* Dark background for the navbar */
-    padding: 10px 20px; /* Padding around the navbar */
+/* General styles */
+body {
+    font-family: Arial, sans-serif; /* Set a clean font for the page */
+    margin: 0; /* Remove default margin */
+    background-color: #f5f5f5; /* Light background for contrast */
+  }
+  
+  header {
+    background-color: #333; /* Dark background for header */
+    color: white; /* White text color */
+    padding: 10px 20px; /* Padding around header */
+    text-align: center; /* Center the header text */
+  }
+  
+  /* Container to hold navbar and main content */
+  .container {
+    display: flex; /* Use flexbox for layout */
+  }
+  
+  /* Navbar styles */
+  nav {
+    width: 200px; /* Set a fixed width for the navbar */
+    background-color: #444; /* Darker background for navbar */
+    padding: 20px; /* Padding around navbar */
   }
   
   nav ul {
     list-style-type: none; /* Remove bullet points from the list */
-    margin: 0; /* Remove default margin */
     padding: 0; /* Remove default padding */
-    display: flex; /* Use flexbox for horizontal layout */
   }
   
   nav ul li {
@@ -17,7 +35,7 @@ nav {
   
   nav ul li a {
     color: white; /* Text color */
-    padding: 15px 20px; /* Padding around links */
+    padding: 10px; /* Padding around links */
     text-decoration: none; /* Remove underline from links */
     display: block; /* Make the link fill the list item */
   }
@@ -51,9 +69,22 @@ nav {
     background-color: #575757; /* Change background on hover */
   }
   
+  /* Main content styles */
+  main {
+    flex-grow: 1; /* Allow main to take the remaining space */
+    padding: 20px; /* Padding around main content */
+  }
+  
+  section {
+    margin-bottom: 20px; /* Space between sections */
+    background: white; /* White background for sections */
+    padding: 15px; /* Padding inside sections */
+    border-radius: 5px; /* Rounded corners for sections */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Slight shadow for depth */
+  }
   
   /* Slideshow styles */
-.slideshow {
+  .slideshow {
     width: 100%;
     position: relative;
     max-width: 600px; /* Set a maximum width for the slideshow */
@@ -70,11 +101,14 @@ nav {
     display: block;   /* Show the first image initially */
   }
   
-  /* Text styles */
-  #gallery p {
-    text-align: center;  /* Center align the text */
-    font-size: 1.2em;    /* Adjust font size as needed */
-    margin-top: 10px;    /* Space between the images and text */
-    color: #333;          /* Change color for better visibility */
+  /* Footer styles */
+  footer {
+    text-align: center; /* Center text in the footer */
+    padding: 10px; /* Padding around footer */
+    background-color: #333; /* Dark background for footer */
+    color: white; /* White text color */
+    position: relative; /* Make sure it stays at the bottom */
+    bottom: 0; /* Stick to bottom */
+    width: 100%; /* Full width */
   }
   
