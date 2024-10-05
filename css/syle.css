@@ -27,19 +27,19 @@ nav ul {
     display: block;
   }
   
-  /* Slideshow styles */
   .slideshow {
     width: 100%;
     position: relative;
+    max-width: 600px; /* Set a maximum width for the slideshow */
+    margin: 0 auto;   /* Center the slideshow on the page */
   }
   
   .slideshow img {
-    width: 100%;
-    height: auto;
-    display: none;
+    width: 100%;      /* Set the width to 100% of the slideshow container */
+    height: auto;     /* Maintain aspect ratio */
+    display: none;    /* Hide all images by default */
   }
   
   .slideshow img:first-child {
-    display: block;
+    display: block;   /* Show the first image initially */
   }
-  
