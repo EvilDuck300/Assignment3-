@@ -27,7 +27,8 @@ nav ul {
     display: block;
   }
   
-  .slideshow {
+  /* Slideshow styles */
+.slideshow {
     width: 100%;
     position: relative;
     max-width: 600px; /* Set a maximum width for the slideshow */
@@ -43,3 +44,12 @@ nav ul {
   .slideshow img:first-child {
     display: block;   /* Show the first image initially */
   }
+  
+  /* Text styles */
+  #gallery p {
+    text-align: center;  /* Center align the text */
+    font-size: 1.2em;    /* Adjust font size as needed */
+    margin-top: 10px;    /* Space between the images and text */
+    color: #333;          /* Change color for better visibility */
+  }
+  
