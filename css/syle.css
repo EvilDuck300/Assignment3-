@@ -1,0 +1,45 @@
+/* Dropdown menu styles */
+nav ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  nav ul li {
+    display: inline-block;
+    position: relative;
+  }
+  
+  nav ul li ul.dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #4CAF50;
+    padding: 10px;
+    list-style-type: none;
+  }
+  
+  nav ul li:hover ul.dropdown {
+    display: block;
+  }
+  
+  nav ul li ul.dropdown li {
+    display: block;
+  }
+  
+  /* Slideshow styles */
+  .slideshow {
+    width: 100%;
+    position: relative;
+  }
+  
+  .slideshow img {
+    width: 100%;
+    height: auto;
+    display: none;
+  }
+  
+  .slideshow img:first-child {
+    display: block;
+  }
+  
